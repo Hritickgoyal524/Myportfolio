@@ -20,8 +20,7 @@ else {
   }
   Widget build(BuildContext context){
     return Scaffold(
-      resizeToAvoidBottomInset: true,
-      resizeToAvoidBottomPadding: true,
+      
       appBar:AppBar(
         title: Text("Portfolio",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 29,fontStyle: FontStyle.italic),),
         centerTitle: true,
@@ -35,7 +34,9 @@ else {
             Color(0xffFD6E6A),Color(0xffFFC600)
           ])
         ),
-        child:Column(
+        child:
+        SingleChildScrollView(child:
+        Column(
          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
     SizedBox(height:90)    , 
@@ -103,6 +104,6 @@ shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5),side:Border
  ],)
  
 ,    )
-    );
+    ));
   }
 }
