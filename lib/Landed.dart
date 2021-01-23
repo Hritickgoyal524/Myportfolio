@@ -20,6 +20,8 @@ else {
   }
   Widget build(BuildContext context){
     return Scaffold(
+      resizeToAvoidBottomInset: true,
+      resizeToAvoidBottomPadding: true,
       appBar:AppBar(
         title: Text("Portfolio",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 29,fontStyle: FontStyle.italic),),
         centerTitle: true,
